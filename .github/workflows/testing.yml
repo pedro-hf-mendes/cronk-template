@@ -3,13 +3,16 @@
 # For more information see:
 # https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
 
-name: Python package
+name: Check Runs
 
 on:
   push:
     branches: ["main"]
   pull_request:
     branches: ["main"]
+    
+permissions: 
+ contents: read
 
 jobs:
   build:
